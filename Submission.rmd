@@ -24,9 +24,7 @@ mshoot <- read.csv("USMassShootings.csv")
 
 ```
 
-> **Tip**: Before you create any plots, it is a good idea to provide a short
-introduction into the dataset that you are planning to explore. Replace this
-quoted text with that general information!
+According to Adam Lankford at the University of Alabama, US Census Bureau, "The US makes up less than 5% of the world population but a third of the worlds mass shooting incidents."
 
 # Univariate Plots Section
 
