@@ -37,7 +37,7 @@ lattice::histogram( ~ YEAR,
 	type = "count",
 	main = "Shootings By Year")
 ```
-```{r echo=FALSE, Univariate_Plots}
+```{r echo=FALSE}
 contTable <- xtabs(~ ASSAULT, data = mshoot)
 barchart(contTable,
 	main = "Assault Weapon vs Non-Assault Weapon",
@@ -46,19 +46,19 @@ barchart(contTable,
 
 ```
 
-```{r echo=FALSE, Univariate_Plots}
+```{r echo=FALSE}
 # Change the colum name "ï..CASE" to a more readable "INCIDENT"
 names(mshoot)[names(mshoot) == 'ï..CASE'] <- 'INCIDENT'
 
 ```
-```{r echo=FALSE, Univariate_Plots}
+```{r echo=FALSE}
 contTable <- xtabs(~ STATE, data = mshoot)
 barchart(contTable,
 	main = "Incidents by State")
 
 ```
 
-```{r echo=FALSE, Univariate_Plots}
+```{r echo=FALSE}
 sex <- table(mshoot$GENDER)
 lbls <- c("Female", "Male")
 pie3D(sex, labels = lbls,
