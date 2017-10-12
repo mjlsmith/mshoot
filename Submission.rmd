@@ -24,9 +24,7 @@ mshoot <- read.csv("USMassShootings.csv")
 
 ```
 
-> **Tip**: Before you create any plots, it is a good idea to provide a short
-introduction into the dataset that you are planning to explore. Replace this
-quoted text with that general information!
+According to Adam Lankford at the University of Alabama, US Census Bureau, "The US makes up less than 5% of the world population but a third of the worlds mass shooting incidents."
 
 # Univariate Plots Section
 
@@ -40,7 +38,11 @@ lattice::histogram( ~ YEAR,
 	main = "Shootings By Year")
 ```
 ```{r echo=FALSE, Univariate_Plots}
-
+contTable <- xtabs(~ ASSAULT, data = mshoot)
+barchart(contTable,
+	main = "Assault Weapon vs Non-Assault Weapon",
+	xlab = "Number of Incidents",
+	ylab = "Was an assault weapon used?")
 
 ```
 
@@ -181,5 +183,6 @@ the insights you found. What were some of the struggles that you went through?
 What went well? What was surprising? Make sure you include an insight into
 future work that could be done with the dataset.
 
-> **Tip**: Don't forget to remove this, and the other **Tip** sections before
-saving your final work and knitting the final report!
+> #### Refrences
+https://www.ft.com/content/200a8746-a7db-11e7-ab55-27219df83c97
+Dataset downloaded from https://data.world/awram/us-mass-shootings
