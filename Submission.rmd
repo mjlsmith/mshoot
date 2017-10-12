@@ -3,7 +3,7 @@ output:
   html_document: default
   pdf_document: default
 ---
-TITLE by YOUR_NAME_HERE
+Mass shootings in the US from 1982-2015
 ========================================================
 
 
