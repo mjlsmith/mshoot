@@ -58,7 +58,7 @@ barchart(contTable,
 
 ```
 
-```{r}
+```{r echo=FALSE, Univariate_Plots}
 sex <- table(mshoot$GENDER)
 lbls <- c("Female", "Male")
 pie3D(sex, labels = lbls,
